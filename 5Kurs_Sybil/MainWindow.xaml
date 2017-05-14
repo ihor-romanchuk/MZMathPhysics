@@ -1,0 +1,82 @@
+﻿<Window x:Class="_5Kurs_Sybil.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5Kurs_Sybil"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl x:Name="tabControl" >
+            <TabItem Header="Завдання 1">
+                <Grid >
+                    <GroupBox Header="Умова">
+                        <StackPanel>
+                            <Image Margin="5,5,5,5" VerticalAlignment="Top" Source="Resources/Images/Task 1.png"/>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Function g(s):" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="functionGTextBox1" Height="23" Margin="83,4,5,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Amount of partitions:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="amountOfPartitionsTextBox1" Height="23" Margin="125,4,5,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+                    <Button x:Name="resultBtn1" Content="Результат" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,30" FontSize="18.667" FontFamily="Tahoma" Width="120" Height="30" Click="resultBtn1_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Завдання 2">
+                <Grid Background="#FFE5E5E5">
+                    <GroupBox Header="Умова">
+                        <StackPanel>
+                            <Image Margin="5,5,5,5" VerticalAlignment="Top" Source="Resources/Images/Task 2.png"/>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Function g(s):" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="functionGTextBox2" Height="23" Margin="83,4,5,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Amount of partitions:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="amountOfPartitionsTextBox2" Height="23" Margin="125,4,5,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+                    <Button x:Name="resultBtn2" Content="Результат" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,30" FontSize="18.667" FontFamily="Tahoma" Width="120" Height="30" Click="resultBtn2_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Завдання 3">
+                <Grid Background="#FFE5E5E5">
+                    <GroupBox Header="Умова">
+                        <Image Margin="5,5,5,5" VerticalAlignment="Top" Source="Resources/Images/Task 3.png"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Завдання 4">
+                <Grid Background="#FFE5E5E5">
+                    <GroupBox Header="Умова">
+                        <StackPanel>
+                            <Image Margin="5,5,5,5" VerticalAlignment="Top" Source="Resources/Images/Task 4.png"/>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Function g(s):" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="functionGTextBox4" Height="23" Margin="83,4,5,0" TextWrapping="Wrap" Text="6.28318530717959" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Amount of partitions:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="amountOfPartitionsTextBox4" Height="23" Margin="125,4,5,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+                    <Button x:Name="resultBtn4" Content="Результат" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,30" FontSize="18.667" FontFamily="Tahoma" Width="120" Height="30" Click="resultBtn4_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Завдання 5">
+                <Grid Background="#FFE5E5E5">
+                    <GroupBox Header="Умова">
+                        <Image Margin="5,5,5,5" VerticalAlignment="Top" Source="Resources/Images/Task 5.png"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
