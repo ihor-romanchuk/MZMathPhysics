@@ -47,8 +47,19 @@
             <TabItem Header="Завдання 3">
                 <Grid Background="#FFE5E5E5">
                     <GroupBox Header="Умова">
-                        <Image Margin="5,5,5,5" VerticalAlignment="Top" Source="Resources/Images/Task 3.png"/>
+                        <StackPanel>
+                            <Image Margin="5,5,5,5" VerticalAlignment="Top" Source="Resources/Images/Task 3.png"/>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Function g(s):" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="functionGTextBox3" Height="23" Margin="83,4,5,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Amount of partitions:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="amountOfPartitionsTextBox3" Height="23" Margin="125,4,5,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                        </StackPanel>
                     </GroupBox>
+                    <Button x:Name="resultBtn3" Content="Результат" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,30" FontSize="18.667" FontFamily="Tahoma" Width="120" Height="30" Click="resultBtn3_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Завдання 4">
@@ -63,6 +74,10 @@
                             <Grid Margin="0,5,0,0">
                                 <Label Content="Amount of partitions:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                                 <TextBox x:Name="amountOfPartitionsTextBox4" Height="23" Margin="125,4,5,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
+                            </Grid>
+                            <Grid Margin="0,5,0,0">
+                                <Label Content="Radius (a):" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                                <TextBox x:Name="radiusTextBox4" Height="23" Margin="125,4,5,0" TextWrapping="Wrap" Text="9" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible"/>
                             </Grid>
                         </StackPanel>
                     </GroupBox>

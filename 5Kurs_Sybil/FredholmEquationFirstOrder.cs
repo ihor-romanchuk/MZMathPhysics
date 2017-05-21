@@ -10,17 +10,17 @@ namespace _5Kurs_Sybil
         {
             if (partitionPoints[j - 1] > colocationPoints[i])
             {
-                return -((partitionPoints[j] - colocationPoints[i]) * Math.Log(partitionPoints[j] - colocationPoints[i]) - (partitionPoints[j - 1] - colocationPoints[i]) * Math.Log(partitionPoints[j - 1] - colocationPoints[i]) - (partitionPoints[j] - partitionPoints[j - 1]));
+                return -1 / (2 * Math.PI) * ((partitionPoints[j] - colocationPoints[i]) * Math.Log(partitionPoints[j] - colocationPoints[i]) - (partitionPoints[j - 1] - colocationPoints[i]) * Math.Log(partitionPoints[j - 1] - colocationPoints[i]) - (partitionPoints[j] - partitionPoints[j - 1]));
             }
             else
             {
                 if (partitionPoints[j] < colocationPoints[i])
                 {
-                    return -(-(-partitionPoints[j] + colocationPoints[i]) * Math.Log(-partitionPoints[j] + colocationPoints[i]) + (-partitionPoints[j - 1] + colocationPoints[i]) * Math.Log(-partitionPoints[j - 1] + colocationPoints[i]) - (partitionPoints[j] - partitionPoints[j - 1]));
+                    return -1 / (2 * Math.PI) * (-(-partitionPoints[j] + colocationPoints[i]) * Math.Log(-partitionPoints[j] + colocationPoints[i]) + (-partitionPoints[j - 1] + colocationPoints[i]) * Math.Log(-partitionPoints[j - 1] + colocationPoints[i]) - (partitionPoints[j] - partitionPoints[j - 1]));
                 }
                 else
                 {
-                    return -((-partitionPoints[j - 1] + colocationPoints[i]) * Math.Log(-partitionPoints[j - 1] + colocationPoints[i]) + (partitionPoints[j] - colocationPoints[i]) * Math.Log(partitionPoints[j] - colocationPoints[i]) - (partitionPoints[j] - partitionPoints[j - 1]));
+                    return -1 / (2 * Math.PI) * ((-partitionPoints[j - 1] + colocationPoints[i]) * Math.Log(-partitionPoints[j - 1] + colocationPoints[i]) + (partitionPoints[j] - colocationPoints[i]) * Math.Log(partitionPoints[j] - colocationPoints[i]) - (partitionPoints[j] - partitionPoints[j - 1]));
                 }
             }
         }

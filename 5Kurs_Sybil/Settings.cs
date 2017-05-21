@@ -6,6 +6,8 @@ namespace _5Kurs_Sybil
 {
     public class Settings
     {
+        private List<double> _colocationPoints;
+
         /// <summary>
         /// Bounds of t.
         /// </summary>
@@ -37,20 +39,19 @@ namespace _5Kurs_Sybil
                 return partitionPoints;
             }
         }
-        public List<double> ColocationPoints
+        public List<double> ColocationPoints { get; set; }
+
+        public List<double> GetDefaultColocationPoints()
         {
-            get
+            var colocationPoints = new List<double>();
+            List<double> partitionPoints = PartitionPoints;
+
+            for (int i = 0; i < partitionPoints.Count - 1; i++)
             {
-                var colocationPoints = new List<double>();
-                List<double> partitionPoints = PartitionPoints;
-
-                for (int i = 0; i < partitionPoints.Count - 1; i++)
-                {
-                    colocationPoints.Add((partitionPoints[i] + partitionPoints[i + 1]) / 2.0);
-                }
-
-                return colocationPoints;
+                colocationPoints.Add((partitionPoints[i] + partitionPoints[i + 1]) / 2.0);
             }
+
+            return colocationPoints;
         }
     }
 }
